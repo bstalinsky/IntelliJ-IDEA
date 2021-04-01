@@ -1,0 +1,46 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.concurrent.TimeUnit;
+
+public class UsersTest {
+
+    public static WebDriver driver;
+
+    @Test
+    public void login() throws InterruptedException{
+
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+        ChromeDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30 , TimeUnit.SECONDS);
+        driver.get("http://users.bugred.ru/user/login/index.html");
+        driver.findElement(By.name("login")).sendKeys("bstalinsky@gmail.com");
+        driver.findElement(By.name("password")).sendKeys("dsaewqxx11");
+        driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/form/table/tbody/tr[3]/td[2]/input")).click();
+        WebElement Bang = driver.findElement(By.xpath("//a[contains(text(),'Добавить пользователя')]"));
+        Assert.assertEquals(Bang.isDisplayed(), true);
+        driver.findElement(By.xpath("//a[contains(text(),'Добавить пользователя')]")).click();
+
+        driver.get("http://users.bugred.ru/user/admin/index/create.html");
+        driver.findElement(By.name("noibiz_name")).sendKeys("hilleltes123");
+        driver.findElement(By.name("noibiz_email")).sendKeys("hilleltes123@gmail.com");
+        driver.findElement(By.name("noibiz_password")).sendKeys("dsaewqxx11");
+        driver.findElement(By.xpath("/html/body/div[3]/form/table/tbody/tr[21]/td[2]/input")).click();
+
+        driver.findElement(By.xpath("//*[@id=\"fat-menu\"]/a")).click();
+        driver.findElement(By.xpath("//*[@id=\"fat-menu\"]/ul/li[1]/a")).click();
+
+        driver.findElement(By.name("name")).sendKeys("hilleltest123");
+        driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/table/tbody/tr[3]/td[2]/select/option[2]")).click();
+        driver.findElement(By.name("birthday")).sendKeys("27.03.1993");
+        driver.findElement(By.name("date_start")).sendKeys("22.03.2020");
+        driver.findElement(By.name("hobby")).sendKeys("cars");
+        driver.findElement(By.name("inn")).sendKeys("i dont remember");
+        driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/table/tbody/tr[8]/td[2]/input")).click();
+
+    }
+}
