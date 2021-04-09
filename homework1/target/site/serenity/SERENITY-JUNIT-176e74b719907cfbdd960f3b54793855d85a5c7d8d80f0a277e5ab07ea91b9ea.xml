@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="music.cucumber.Steps.DeleteSteps" skipped="0" tests="1" time="45.12" timestamp="2021-04-99 01:14:40"><testcase classname="music.cucumber.Steps.DeleteSteps" name="User navigates to mixcloud website"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: &#10;&#10;###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost&#10;&#10;&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'MacBook-Pro-2.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: FirefoxDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'MacBook-Pro-2.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: FirefoxDriver</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'MacBook-Pro-2.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: FirefoxDriver
+music.cucumber.Steps.DeleteSteps.user_navigates_to_mixcloud_website(DeleteSteps.java:27)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</system-err></testcase></testsuite>
